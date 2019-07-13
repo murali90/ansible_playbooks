@@ -1,0 +1,17 @@
+= Ansible playbooks and roles
+
+== Local development environment
+`ansible-playbook -i localhost -c local -K wsl.yml`
+
+== Multipurpose server
+`ansible-playbook -i hosts -K  multi-purpose-server.yml`
+
+== HTPC
+`ansible-playbook -i hosts -K  htpc.yml`
+
+== Debugging parameters
+* `-t`
+* `-v`
+* `--start-at-task <START_AT_TASK>`
+* `--step`
+* https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html
